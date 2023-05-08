@@ -1,0 +1,137 @@
+# 2018 data
+df2018 = pd.read_csv("file path")
+df2018 = df2018.replace(to_replace=r'\n', value='', regex=True)
+df2018
+
+*Check for NAs and drop them*
+
+occur = df2018.groupby(['CALL_RESOLUTION']).size()
+occur = df2018.groupby(['CALL_RESOLUTION']).size().plot(kind="bar")
+display(occur)
+*Sort labels in descending order of count*
+
+df2018 =df2018[df2018["CALL_RESOLUTION"].str.contains("Unspecified") == False]
+df2018 =df2018[df2018["CALL_RESOLUTION"].str.contains("Done") == False]
+df2018 =df2018[df2018["CALL_RESOLUTION"].str.contains("Busy Signal") == False]
+df2018 =df2018[df2018["CALL_RESOLUTION"].str.contains("Incomplete") == False]
+df2018 =df2018[df2018["CALL_RESOLUTION"].str.contains("Complete") == False]
+df2018 =df2018[df2018["CALL_RESOLUTION"].str.contains("Unmet Need") == False]
+df2018 =df2018[df2018["CALL_RESOLUTION"].str.contains("Away Long Term") == False]
+df2018 =df2018[df2018["CALL_RESOLUTION"].str.contains("Additional Requests Created") == False]
+df2018 =df2018[df2018["CALL_RESOLUTION"].str.contains("Expired - Time") == False]
+df2018 =df2018[df2018["CALL_RESOLUTION"].str.contains("Success") == False]
+df2018 =df2018[df2018["CALL_RESOLUTION"].str.contains("Expired - Attempts") == False]
+df2018 =df2018[df2018["CALL_RESOLUTION"].str.contains("Call-Back Notification") == False]
+
+print(df2018['CALL_RESOLUTION'].unique())
+
+#Tokenize labels 2018
+
+print(df2018['CALL_RESOLUTION'].unique())
+
+df2018.isna().sum()
+len(df2018)
+
+# 2019 Data
+df2019 = pd.read_csv('/content/drive/MyDrive/NLP Project/311_Call_Center_Inquiry_2019.csv')
+df2019 = df2019.replace(to_replace=r'\n', value='', regex=True)
+df2019
+
+df2019.head()
+df2019.count()
+len(df2019)
+*Check for NAs and drop them*
+len(df2019)
+
+occur_2019 = df2019.groupby(['CALL_RESOLUTION']).size()
+occur_2019 = df2019.groupby(['CALL_RESOLUTION']).size().plot(kind="bar")
+display(occur_2019)
+*Sort labels in descending order of count*
+
+#Tokenize labels 2019
+
+df2018.groupby(['CALL_RESOLUTION']).size()
+print(df2019['CALL_RESOLUTION'].unique())
+df2019.groupby(['CALL_RESOLUTION']).size()
+
+#Training Set
+df2018_SR= df2018[(df2018.CALL_RESOLUTION== "Look up SR")]
+*Randomized and get 1000 rows for every tokenized label*
+
+df2018_Final=pd.concat([df2018_SRs, df2018_ITs], axis=0)
+df2018_Final=pd.concat([df2018_Final, df2018_IPs], axis=0)
+df2018_Final=pd.concat([df2018_Final, df2018_911s], axis=0)
+df2018_Final=pd.concat([df2018_Final, df2018_OJs], axis=0)
+df2018_Final=pd.concat([df2018_Final, df2018_CNs], axis=0)
+df2018_Final=pd.concat([df2018_Final, df2018_As], axis=0)
+df2018_Final=pd.concat([df2018_Final, df2018_ACs], axis=0)
+df2018_Final=pd.concat([df2018_Final, df2018_SSs], axis=0)
+
+print(df2018['CALL_RESOLUTION'].unique())
+print(df2018_Final['CALL_RESOLUTION'].unique())
+df2018_Final.groupby(['CALL_RESOLUTION']).size()
+
+#Naive Bayes Classifer
+df2018_Final_c = df2018_Final[["AGENCY_NAME","INQUIRY_NAME", "BRIEF_DESCRIPTION", "CALL_RESOLUTION"]]
+df2019_c = df2019[["AGENCY_NAME","INQUIRY_NAME", "BRIEF_DESCRIPTION", "CALL_RESOLUTION"]]
+df2018_Final_c.head()
+df2019_c.head()
+
+*Save transformed train and test pandas dataframes to csv files*
+
+df2018c = pd.read_csv('file path', names=None, header=None)
+df2018c = df2018c.replace(to_replace=r'\n', value='', regex=True)
+df2018c
+len(df2018c)
+df2018_train=df2018c.head(9001) 
+len(df2018_train)
+df2018_train
+
+df2019c = pd.read_csv('file path', names=None, header=None)
+df2019c = df2019c.replace(to_replace=r'\n', value='', regex=True)
+df2019c
+len(df2019c)
+df2019_test=df2019c.head(9001)
+
+*Check and drop columns with NAs for training and test set*
+
+from sklearn.feature_extraction.text import CountVectorizer 
+ngram_range = *array*
+vectorizer = CountVectorizer(ngram_range=ngram_range, min_df=1)
+X = vectorizer.fit_transform(*output in train set*)
+X.shape
+X.shape[0]
+
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report, accuracy_score
+from sklearn.naive_bayes import MultinomialNB #multi-class
+
+*Randomized test set*
+labels = *Desired Output*
+X_train, X_test, y_train, y_test, train_idx, test_idx = train_test_split(X, labels, np.arange(X.shape[0]), test_size=test_size) 
+nb_classifier = MultinomialNB()
+
+nb_classifier.fit(X_train, y_train)
+print(f'Accuracy {np.round(accuracy_score(y_test, nb_classifier.predict(X_test)), 2)}')
+print(classification_report(y_test, *model*.predict(X_test)))
+
+# linear SVM classifier
+from sklearn.svm import SVC
+svm_classifier = SVC(*kernel*)
+svm_classifier.fit(X_train, y_train)
+
+print(f'Accuracy {np.round(accuracy_score(y_test, svm_classifier.predict(X_test)), 2)}')
+print(classification_report(y_test, *model*.predict(X_test)))
+
+# Random Forest
+from sklearn.ensemble import RandomForestClassifier
+rf = RandomForestClassifier(criterion='gini', *tune parameters*)
+rf.fit(X_train,y_train)
+rf_training_pred = rf.predict(X_train)
+rf_training_prediction = accuracy_score(y_train, rf_training_pred)
+
+print("Accuracy of Random Forest training set:",   round(rf_training_prediction,*#*))
+
+
+
+
