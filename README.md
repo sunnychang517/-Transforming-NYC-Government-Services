@@ -39,10 +39,10 @@ client = Socrata("data.cityofnewyork.us",</br>
 2. Use the console to conduct filters, group, aggregate, or deselect columns 
 3. Click "Export" when you are done with querying the data 
 
-<strong>Note:</strong> If you want to use the API Endpoint when exporting then click [here](https://github.com/sunnychang517/-Transforming-NYC-Government-Services/edit/main/README.md#access-data-through-soda-api-on-the-site)
+<strong>Note:</strong> If you want to use the API Endpoint when exporting then click [here](https://github.com/sunnychang517/-Transforming-NYC-Government-Services#access-data-through-soda-api-on-the-site)
 
 ## Tokenization
-<h5>Same Labels in Training and Test Set</h5>
+<h5>Same Labels in Training and Test Data Sets</h5>
 <img width="250" alt="Screenshot 2023-05-01 004159" src="https://user-images.githubusercontent.com/54777897/236724636-26c77fec-dda6-4ca1-ad8f-6ba79750b86e.png">
 
 ## Acknowledgement: 
