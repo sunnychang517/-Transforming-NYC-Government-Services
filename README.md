@@ -5,12 +5,12 @@ To use text classification to help NYC311 with service requests management by he
 
 ## Table of Contents:
 
-[Overview](https://github.com/sunnychang517/-Transforming-NYC-Government-Services/main/README.md#overview)</br>
-[Data Source](https://github.com/sunnychang517/-Transforming-NYC-Government-Services/main/README.md#data-source)</br>
-[Access Data through SODA API](https://github.com/sunnychang517/-Transforming-NYC-Government-Services/main/README.md#access-data-through-soda-api-on-the-site)</br>
-[Access Data by Clicking "View Data" on the site](https://github.com/sunnychang517/-Transforming-NYC-Government-Services/main/README.md#access-data-through-soda-api-on-the-site)</br>
-[Tokenization](https://github.com/sunnychang517/-Transforming-NYC-Government-Services/main/README.md#tokenization)</br>
-[Acknowledgement](https://github.com/sunnychang517/-Transforming-NYC-Government-Services/main/README.md#acknowledgement)
+[Overview](https://github.com/sunnychang517/-Transforming-NYC-Government-Services#overview)</br>
+[Data Source](https://github.com/sunnychang517/-Transforming-NYC-Government-Services#data-source)</br>
+[Access Data through SODA API](https://github.com/sunnychang517/-Transforming-NYC-Government-Services#access-data-through-soda-api-on-the-site)</br>
+[Access Data by Clicking "View Data" on the site](https://github.com/sunnychang517/-Transforming-NYC-Government-Services#access-data-through-soda-api-on-the-site)</br>
+[Tokenization](https://github.com/sunnychang517/-Transforming-NYC-Government-Services#tokenization)</br>
+[Acknowledgement](https://github.com/sunnychang517/-Transforming-NYC-Government-Services#acknowledgement)
 
 ## Data Source
  NYC Open Data
