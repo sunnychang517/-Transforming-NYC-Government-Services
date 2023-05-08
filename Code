@@ -33,7 +33,7 @@ df2018.isna().sum()
 len(df2018)
 
 # 2019 Data
-df2019 = pd.read_csv('/content/drive/MyDrive/NLP Project/311_Call_Center_Inquiry_2019.csv')
+df2019 = pd.read_csv('file path')
 df2019 = df2019.replace(to_replace=r'\n', value='', regex=True)
 df2019
 
@@ -41,7 +41,6 @@ df2019.head()
 df2019.count()
 len(df2019)
 *Check for NAs and drop them*
-len(df2019)
 
 occur_2019 = df2019.groupby(['CALL_RESOLUTION']).size()
 occur_2019 = df2019.groupby(['CALL_RESOLUTION']).size().plot(kind="bar")
