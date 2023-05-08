@@ -8,7 +8,7 @@ To use text classification to help NYC311 with service requests management by he
 [Overview](https://github.com/sunnychang517/-Transforming-NYC-Government-Services/edit/main/README.md#overview)</br>
 [Data Source](https://github.com/sunnychang517/-Transforming-NYC-Government-Services/edit/main/README.md#data-source)</br>
 [Access Data through SODA API](https://github.com/sunnychang517/-Transforming-NYC-Government-Services/edit/main/README.md#access-data-through-soda-api-on-the-site)</br>
-[Access data by Clicking "View Data" on the site](https://github.com/sunnychang517/-Transforming-NYC-Government-Services/edit/main/README.md#access-data-through-soda-api-on-the-site)</br>
+[Access Data by Clicking "View Data" on the site](https://github.com/sunnychang517/-Transforming-NYC-Government-Services/edit/main/README.md#access-data-through-soda-api-on-the-site)</br>
 [Tokenization](https://github.com/sunnychang517/-Transforming-NYC-Government-Services/edit/main/README.md#tokenization)</br>
 [Acknowledgement](https://github.com/sunnychang517/-Transforming-NYC-Government-Services/edit/main/README.md#acknowledgement)
 
@@ -17,7 +17,7 @@ To use text classification to help NYC311 with service requests management by he
  
  311. “311 Call Center Inquiry: NYC Open Data.” 311 Call Center Inquiry | NYC Open Data, 3 Apr. 2023, https://data.cityofnewyork.us/City-Government/311-Call-Center-Inquiry/wewp-mm3p. 
  
-## Access data through SODA API on the site
+## Access Data through SODA API on the site
 
  1. Copy and Paste API Endpoint by clicking "API" which is next to "Export"
  2. Create a NYC Open Data account 
@@ -33,7 +33,7 @@ client = Socrata("data.cityofnewyork.us",</br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; username="*account username*",</br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; password="*account password*")</br>
 
-## Access data by Clicking "View Data" on the site
+## Access Data by Clicking "View Data" on the site
 
 1. Clicking "View Data" on the site which will bring you to another webpage
 2. Use the console to conduct filters, group, aggregate, or deselect columns 
