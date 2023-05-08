@@ -70,7 +70,7 @@ print(df2018['CALL_RESOLUTION'].unique())
 print(df2018_Final['CALL_RESOLUTION'].unique())
 df2018_Final.groupby(['CALL_RESOLUTION']).size()
 
-#Naive Bayes Classifer
+# Naive Bayes Classifer
 df2018_Final_c = df2018_Final[["AGENCY_NAME","INQUIRY_NAME", "BRIEF_DESCRIPTION", "CALL_RESOLUTION"]]
 df2019_c = df2019[["AGENCY_NAME","INQUIRY_NAME", "BRIEF_DESCRIPTION", "CALL_RESOLUTION"]]
 df2018_Final_c.head()
@@ -114,7 +114,7 @@ nb_classifier.fit(X_train, y_train)
 print(f'Accuracy {np.round(accuracy_score(y_test, nb_classifier.predict(X_test)), 2)}')
 print(classification_report(y_test, *model*.predict(X_test)))
 
-# linear SVM classifier
+# Linear SVM classifier
 from sklearn.svm import SVC
 svm_classifier = SVC(*kernel*)
 svm_classifier.fit(X_train, y_train)
