@@ -109,7 +109,7 @@ labels = *Desired Output*
 X_train, X_test, y_train, y_test, train_idx, test_idx = train_test_split(X, labels, np.arange(X.shape[0]), test_size=test_size) 
 nb_classifier = MultinomialNB()
 
-nb_classifier.fit(X_train, y_train)
+nb_classifier.fit(*train*)
 print(f'Accuracy {np.round(accuracy_score(y_test, nb_classifier.predict(X_test)), 2)}')
 print(classification_report(y_test, *model*.predict(X_test)))
 
