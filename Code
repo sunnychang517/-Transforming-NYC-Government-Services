@@ -54,7 +54,6 @@ print(df2019['CALL_RESOLUTION'].unique())
 df2019.groupby(['CALL_RESOLUTION']).size()
 
 #Training Set
-df2018_SR= df2018[(df2018.CALL_RESOLUTION== "Look up SR")]
 *Randomized and get 1000 rows for every tokenized label*
 
 df2018_Final=pd.concat([df2018_SRs, df2018_ITs], axis=0)
