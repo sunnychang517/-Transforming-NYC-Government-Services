@@ -47,6 +47,15 @@ occur_2019 = df2019.groupby(['CALL_RESOLUTION']).size().plot(kind="bar")
 display(occur_2019)
 *Sort labels in descending order of count*
 
+df2019 =df2019[df2019["CALL_RESOLUTION"].str.contains("Unspecified") == False]
+df2019 =df2019[df2019["CALL_RESOLUTION"].str.contains("Done") == False]
+df2019 =df2019[df2019["CALL_RESOLUTION"].str.contains("Busy Signal") == False]
+df2019 =df2019[df2019["CALL_RESOLUTION"].str.contains("Incomplete") == False]
+df2019 =df2019[df2019["CALL_RESOLUTION"].str.contains("Complete") == False]
+df2019 =df2019[df2019["CALL_RESOLUTION"].str.contains("Unmet Need") == False]
+df2019 =df2019[df2019["CALL_RESOLUTION"].str.contains("In Progress") == False]
+df2019 =df2019[df2019["CALL_RESOLUTION"].str.contains("Additional Requests Created") == False]
+
 #Tokenize labels 2019
 
 df2018.groupby(['CALL_RESOLUTION']).size()
