@@ -33,7 +33,7 @@ client = Socrata("data.cityofnewyork.us",</br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; username="*account username*",</br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; password="*account password*")</br>
 
-## Access Data by Clicking "View Data" on the site
+## Alternative to Access Data
 
 1. Clicking "View Data" on the site which will bring you to another webpage
 2. Use the console to conduct filters, group, aggregate, or deselect columns 
