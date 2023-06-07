@@ -48,4 +48,4 @@ client = Socrata("data.cityofnewyork.us",</br>
 ## Acknowledgement: 
 This is for a project at Columbia University where I learned how to improve my programming skills in python.</br>
 Team member: Thomas Cooper</br>
-Professor: John Oretga 
+
