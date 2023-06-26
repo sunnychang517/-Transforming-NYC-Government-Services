@@ -26,6 +26,7 @@ df2018 =df2018[df2018["CALL_RESOLUTION"].str.contains("Call-Back Notification") 
 print(df2018['CALL_RESOLUTION'].unique())
 
 #Tokenize labels 2018
+...
 
 print(df2018['CALL_RESOLUTION'].unique())
 
@@ -57,6 +58,7 @@ df2019 =df2019[df2019["CALL_RESOLUTION"].str.contains("In Progress") == False]
 df2019 =df2019[df2019["CALL_RESOLUTION"].str.contains("Additional Requests Created") == False]
 
 #Tokenize labels 2019
+...
 
 df2018.groupby(['CALL_RESOLUTION']).size()
 print(df2019['CALL_RESOLUTION'].unique())
