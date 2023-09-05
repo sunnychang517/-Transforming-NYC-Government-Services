@@ -46,6 +46,6 @@ client = Socrata("data.cityofnewyork.us",</br>
 <img width="250" alt="Screenshot 2023-05-01 004159" src="https://user-images.githubusercontent.com/54777897/236724636-26c77fec-dda6-4ca1-ad8f-6ba79750b86e.png">
 
 ## Acknowledgement: 
-This is for a project at Columbia University where I learned how to improve my programming skills in python.</br>
+This is for a project at Columbia University where I learned how to improve my programming skills in Python.</br>
 Team member: Thomas Cooper</br>
 
